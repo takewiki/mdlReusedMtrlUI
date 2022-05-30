@@ -5,7 +5,7 @@
 \title{产品分组UI}
 \usage{
 prdPickupUI(
-  tabTitle = "回料粉碎记录表",
+  tabTitle = "回料使用记录表",
   colTitles = c("操作区域", "报表区域"),
   widthRates = c(4, 8),
   func_left = prdPickupFunc_left,
