@@ -24,7 +24,10 @@ prdPickupFunc_left<- function() {
     br(),
     tsui::mdl_file(id = 'fileprdPickup_upload',label = '请选择需要回料使用记录表EXCEL文件'),
     shiny::uiOutput(outputId = 'placeholderprdPickup_sheets'),
-    shiny::actionButton(inputId = 'btnprdPickup_upload',label = '上传至服务器')
+    tsui::layout_2C(shiny::actionButton(inputId = 'btnprdPickup_upload',label = '新增'),
+                    shiny::actionButton(inputId = 'btnprdPickup_overwrite',label = '覆盖'))
+
+
   )
   return(res)
 

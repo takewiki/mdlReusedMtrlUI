@@ -24,7 +24,9 @@ prdInStockFunc_left<- function() {
     br(),
     tsui::mdl_file(id = 'fileprdInStock_upload',label = '请选择需要回料粉碎记录表EXCEL文件'),
     shiny::uiOutput(outputId = 'placeholderprdInStock_sheets'),
-    shiny::actionButton(inputId = 'btnprdInStock_upload',label = '上传至服务器')
+    tsui::layout_2C( shiny::actionButton(inputId = 'btnprdInStock_upload',label = '新增'),
+                     shiny::actionButton(inputId = 'btnprdInStock_overwrite',label = '覆盖'))
+
   )
   return(res)
 
